@@ -1,0 +1,5 @@
+{
+  "name": "NASA Earth Observation Quiz Generator",
+  "description": "An interactive quiz application that generates unique multiple-choice questions about NASA Earth Observation, satellites, and natural hazards using the Gemini API. Perfect for students, teachers, and space enthusiasts.",
+  "requestFramePermissions": []
+}
