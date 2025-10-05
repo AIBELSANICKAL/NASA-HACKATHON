@@ -1,25 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA Quiz Generator</title>
+
+    <!-- ✅ Safe favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- ✅ Tailwind CSS (official CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
-  }
-}
-</script>
-</head>
-  <body class="bg-gray-900 text-white font-sans">
+
+    <!-- ✅ React and ReactDOM from official unpkg CDN -->
+    <script crossorigin src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+
+    <!-- Optional: Add a short meta description -->
+    <meta name="description" content="An interactive NASA Earth Observation quiz app to learn about natural hazards and space exploration." />
+  </head>
+
+  <body class="bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
     <div id="root"></div>
+
+    <!-- ✅ Your app entry point -->
     <script type="module" src="/index.tsx"></script>
+
+    <!-- Optional: simple loading message -->
+    <noscript>
+      <div style="color:white;text-align:center;margin-top:2rem;">Please enable JavaScript to use the NASA Quiz Generator.</div>
+    </noscript>
   </body>
 </html>
+
